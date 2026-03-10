@@ -13,7 +13,7 @@ function App() {
     const n2 = Number(numero2);
 
     if (isNaN(n1) || isNaN(n2)) {
-      setResultado("Ingresa números válidos");
+      setResultado("Ingrese un numero valido");
       return;
     }
 
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="calculator-container">
-      <h1>Sumadora Simple</h1>
+      <h1>Suma de dos numeros</h1>
 
       <form onSubmit={handleSubmit}>
         <div className="input-group">
@@ -30,7 +30,7 @@ function App() {
             type="number"
             value={numero1}
             onChange={(e) => setNumero1(e.target.value)}
-            placeholder="Primer número"
+            placeholder="Primer num"
             required
           />
           <span>+</span>
@@ -38,7 +38,7 @@ function App() {
             type="number"
             value={numero2}
             onChange={(e) => setNumero2(e.target.value)}
-            placeholder="Segundo número"
+            placeholder="Segundo num"
             required
           />
         </div>
